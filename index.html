@@ -56,11 +56,6 @@
 <li>07.工作区操作</li>
 <li>08.远程同步</li>
 </ul>
-<h3 id="好消息"><a href="#好消息" class="headerlink" title="好消息"></a>好消息</h3><ul>
-<li>博客笔记大汇总【16年3月到至今】，包括Java基础及深入知识点，Android技术博客，Python学习笔记等等，还包括平时开发中遇到的bug汇总，当然也在工作之余收集了大量的面试题，长期更新维护并且修正，持续完善……开源的文件是markdown格式的！同时也开源了生活博客，从12年起，积累共计47篇[近20万字]，转载请注明出处，谢谢！</li>
-<li><strong>链接地址：<a target="_blank" rel="noopener" href="https://github.com/yangchong211/YCBlogs">https://github.com/yangchong211/YCBlogs</a></strong></li>
-<li>如果觉得好，可以star一下，谢谢！当然也欢迎提出建议，万事起于忽微，量变引起质变！</li>
-</ul>
 <h3 id="01-git简单上传代码步骤"><a href="#01-git简单上传代码步骤" class="headerlink" title="01.git简单上传代码步骤"></a>01.git简单上传代码步骤</h3><ul>
 <li>如下所示  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">cd 名称                                 //进入提交文件目录</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;command&quot;                 //command提交内容</span><br><span class="line">git push origin master</span><br><span class="line"></span><br><span class="line">提交失败场景：</span><br><span class="line">根据提示 “更新被拒绝，因为远程仓库包含您本地尚不存在的提交。由此可知github上面可能和本地的代码不同步，需要把远程服务器的代码更新到本地才行。【可能是网站上更改了某文件导致不同步】</span><br><span class="line">解决方法：输入命令git pull即可把github上的代码更新到本地。然后在重新提交</span><br><span class="line"></span><br><span class="line">如果还是无法提交，可以尝试强制更新</span><br><span class="line">git push -u origin +master</span><br></pre></td></tr></table></figure></li>
 </ul>
@@ -80,14 +75,14 @@
 </ul>
 </li>
 <li>创建 SSH key<ul>
-<li>$ ssh-keygen -t rsa -C “<a href="mailto:&#101;&#109;&#97;&#105;&#x6c;&#64;&#101;&#120;&#x61;&#109;&#112;&#108;&#x65;&#46;&#x63;&#111;&#109;">&#101;&#109;&#97;&#105;&#x6c;&#64;&#101;&#120;&#x61;&#109;&#112;&#108;&#x65;&#46;&#x63;&#111;&#109;</a>“</li>
+<li>$ ssh-keygen -t rsa -C “<a href="mailto:&#101;&#109;&#x61;&#x69;&#108;&#64;&#101;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#46;&#x63;&#x6f;&#109;">&#101;&#109;&#x61;&#x69;&#108;&#64;&#101;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#46;&#x63;&#x6f;&#109;</a>“</li>
 <li>此时会生成 id_rsa 和 id_rsa.pub 两个文件，登录网站设置点击 <strong>Add SSH Key</strong> 在 <strong>key</strong> 文本里粘贴 <strong>id_rsa.pub</strong> 文件的内容</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>关联远程仓库<ul>
-<li>$ git remote add origin <a href="mailto:&#103;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#109;">&#103;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#109;</a>:xxx&#x2F;xxx.git</li>
+<li>$ git remote add origin <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;">&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;</a>:xxx&#x2F;xxx.git</li>
 </ul>
 </li>
 <li>推送到远程 master 分支<ul>
@@ -98,7 +93,7 @@
 <h3 id="03-克隆代码库"><a href="#03-克隆代码库" class="headerlink" title="03.克隆代码库"></a>03.克隆代码库</h3><ul>
 <li>下载一个项目和它的整个代码历史<blockquote>
 <p>$ git clone [url]</p>
-<p>[url : <a href="mailto:&#103;&#x69;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;</a>:xxx&#x2F;xxx.git]</p>
+<p>[url : <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#x6d;">&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#x6d;</a>:xxx&#x2F;xxx.git]</p>
 </blockquote>
 </li>
 </ul>
@@ -342,26 +337,6 @@
 <p>$ git revert [commit]</p>
 </blockquote>
 </li>
-</ul>
-<h3 id="关于其他内容介绍"><a href="#关于其他内容介绍" class="headerlink" title="关于其他内容介绍"></a>关于其他内容介绍</h3><h4 id="01-关于博客汇总链接"><a href="#01-关于博客汇总链接" class="headerlink" title="01.关于博客汇总链接"></a>01.关于博客汇总链接</h4><ul>
-<li>1.<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/614cb839182c">技术博客汇总</a></li>
-<li>2.<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_37700275/article/details/80863574">开源项目汇总</a></li>
-<li>3.<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_37700275/article/details/79832978">生活博客汇总</a></li>
-<li>4.<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/f665de16d1eb">喜马拉雅音频汇总</a></li>
-<li>5.<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/53017c3fc75d">其他汇总</a></li>
-</ul>
-<h4 id="02-关于我的博客"><a href="#02-关于我的博客" class="headerlink" title="02.关于我的博客"></a>02.关于我的博客</h4><ul>
-<li>我的个人站点：</li>
-<li>github：<a target="_blank" rel="noopener" href="https://github.com/yangchong211">https://github.com/yangchong211</a></li>
-<li>知乎：<a target="_blank" rel="noopener" href="https://www.zhihu.com/people/yang-chong-69-24/pins/posts">https://www.zhihu.com/people/yang-chong-69-24/pins/posts</a></li>
-<li>简书：<a target="_blank" rel="noopener" href="http://www.jianshu.com/u/b7b2c6ed9284">http://www.jianshu.com/u/b7b2c6ed9284</a></li>
-<li>csdn：<a target="_blank" rel="noopener" href="http://my.csdn.net/m0_37700275">http://my.csdn.net/m0_37700275</a></li>
-<li>喜马拉雅听书：<a target="_blank" rel="noopener" href="http://www.ximalaya.com/zhubo/71989305/">http://www.ximalaya.com/zhubo/71989305/</a></li>
-<li>开源中国：<a target="_blank" rel="noopener" href="https://my.oschina.net/zbj1618/blog">https://my.oschina.net/zbj1618/blog</a></li>
-<li>泡在网上的日子：<a target="_blank" rel="noopener" href="http://www.jcodecraeer.com/member/content_list.php?channelid=1">http://www.jcodecraeer.com/member/content_list.php?channelid=1</a></li>
-<li>邮箱：<a href="mailto:&#x79;&#x61;&#x6e;&#x67;&#99;&#104;&#111;&#110;&#103;&#x32;&#x31;&#49;&#x40;&#x31;&#54;&#x33;&#x2e;&#99;&#111;&#x6d;">&#x79;&#x61;&#x6e;&#x67;&#99;&#104;&#111;&#110;&#103;&#x32;&#x31;&#49;&#x40;&#x31;&#54;&#x33;&#x2e;&#99;&#111;&#x6d;</a></li>
-<li>阿里云博客：<a target="_blank" rel="noopener" href="https://yq.aliyun.com/users/article?spm=5176.100-">https://yq.aliyun.com/users/article?spm=5176.100-</a> 239.headeruserinfo.3.dT4bcV</li>
-<li>segmentfault头条：<a target="_blank" rel="noopener" href="https://segmentfault.com/u/xiangjianyu/articles">https://segmentfault.com/u/xiangjianyu/articles</a></li>
 </ul>
 
 	
